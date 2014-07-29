@@ -68,7 +68,7 @@ namespace ChallengesTest
         {
             for (var i = 0; i < integers.Length; i++)
             {
-                Assert.IsTrue(Numbers.IsPrime(integers[i]));
+                Assert.IsTrue(Numbers.IsPrime(integers[i]), "Failed for {0}", i);
             }
         }
 
@@ -76,7 +76,7 @@ namespace ChallengesTest
         {
             for (var i = 0; i < integers.Length; i++)
             {
-                Assert.IsFalse(Numbers.IsPrime(integers[i]));
+                Assert.IsFalse(Numbers.IsPrime(integers[i]), "Failed for {0}", i);
             }
 
         }

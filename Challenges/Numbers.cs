@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Challenges
 {
-    public class Numbers
+    public static class Numbers
     {
-        public static Boolean IsPrime(Int64 number)
+        public static bool IsPrime(Int64 number)
         {
             if (number == 2)
             {
@@ -22,7 +22,7 @@ namespace Challenges
 
             for (var index = 3; index <= sqrtOfNumber; index += 2) //skip even numbers 
             {
-                if (number % index == 0)
+                if (IsFactor(number,index) )
                 {
                     return false;
                 }
@@ -65,6 +65,20 @@ namespace Challenges
             }
 
             return results.ToArray();
+        }
+
+        public static bool IsPalindrome(long number)
+        {
+            char[] digits = number.ToString().ToCharArray();
+            
+            for (var i = 0; i < digits.Length / 2; i++)
+            {
+                if (digits[i] != digits[digits.Length - i - 1])
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }
