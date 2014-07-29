@@ -20,39 +20,14 @@ namespace Challenges
             
             Console.WriteLine("Find the largest palindrome made from the product of two 3-digit numbers.");
 
-            bool foundIt = false;
-            for (var i = 998001; i > 0 && !foundIt; i-- )
-            {
-                if (Numbers.IsPalindrome(i))
-                {
-                    for (var j = 999; j >= 100; j--)
-                    {
-                        if (Numbers.IsFactor(i,j))
-                        {
-                            if (IsLength3(i/j))
-                            {
-                                Console.WriteLine(i);
-                                foundIt = true;
-                                break;
-                            }
-                        }
-                    }
-                }
-            }
-
-            Console.WriteLine(i);
+            Console.WriteLine(PE4PalindromeNumber());
             
             Console.WriteLine();
             Console.WriteLine("Press enter to close...");
             Console.ReadLine();
         }
 
-        public static bool IsLength3(int number)
-        {
-            return (number.ToString().Length == 3);
-        }
-
-        public int PE4PalindromeNumber()
+        public static int PE4PalindromeNumber()
         {
             for (var i = 998001; i > 0; i--)
             {
@@ -69,5 +44,11 @@ namespace Challenges
             }
             return 0;
         }
+
+        public static bool IsLength3(int number)
+        {
+            return (number.ToString().Length == 3);
+        }
+
     }
 }
