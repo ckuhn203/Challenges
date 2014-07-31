@@ -92,5 +92,19 @@ namespace Challenges
         {
             return Math.Abs(a * b) / GreatestCommonDivisor(a, b);
         }
+
+        
+        public static int LeastCommonMultiple(int[] numbers)
+        {
+            int result = numbers[0];
+            for (var i = 1; i < numbers.Length; i++)
+            {
+                result = LeastCommonMultiple(i, result);
+            }
+            return result;
+        }
+         
+
+
     }
 }
