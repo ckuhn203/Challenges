@@ -31,11 +31,11 @@ namespace Challenges
         {
             for (var i = 998001; i > 0; i--)
             {
-                if (Numbers.IsPalindrome(i))
+                if (MathExtensions.IsPalindrome(i))
                 {
                     for (var j = 999; j >= 100; j--)
                     {
-                        if (Numbers.IsFactor(i, j) && IsLength3(i/j))
+                        if (MathExtensions.IsFactor(i, j) && IsLength3(i/j))
                         {
                             return i;
                         }

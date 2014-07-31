@@ -11,7 +11,7 @@ namespace ChallengesTest
         public void PrimeFactorsTest()
         {
             Int64[] expected = {5,7,13,29};
-            Int64[] actual = Numbers.PrimeFactors(13195);
+            Int64[] actual = MathExtensions.PrimeFactors(13195);
 
             CollectionAssert.AreEqual(expected, actual);
         }

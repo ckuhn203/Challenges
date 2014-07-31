@@ -11,19 +11,19 @@ namespace ChallengesTest
         public void Test12True()
         {
             //2*2*3
-            Assert.IsTrue(Numbers.IsFactor(12, 2));
-            Assert.IsTrue(Numbers.IsFactor(12, 4));
-            Assert.IsTrue(Numbers.IsFactor(12, 3));
-            Assert.IsTrue(Numbers.IsFactor(12, 6));
+            Assert.IsTrue(MathExtensions.IsFactor(12, 2));
+            Assert.IsTrue(MathExtensions.IsFactor(12, 4));
+            Assert.IsTrue(MathExtensions.IsFactor(12, 3));
+            Assert.IsTrue(MathExtensions.IsFactor(12, 6));
         }
 
         [TestMethod]
         public void Test12False()
         {
-            Assert.IsFalse(Numbers.IsFactor(12, 5));
-            Assert.IsFalse(Numbers.IsFactor(12, 7));
-            Assert.IsFalse(Numbers.IsFactor(12, 8));
-            Assert.IsFalse(Numbers.IsFactor(12, 9));
+            Assert.IsFalse(MathExtensions.IsFactor(12, 5));
+            Assert.IsFalse(MathExtensions.IsFactor(12, 7));
+            Assert.IsFalse(MathExtensions.IsFactor(12, 8));
+            Assert.IsFalse(MathExtensions.IsFactor(12, 9));
         }
 
         /*

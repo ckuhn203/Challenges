@@ -48,7 +48,7 @@
     <None Include="Fibonacci.bak" />
     <Compile Include="Fibonacci.cs" />
     <Compile Include="FibonacciProgram.cs" />
-    <Compile Include="Numbers.cs" />
+    <Compile Include="MathExtensions.cs" />
     <Compile Include="ProjectEuler4Program.cs" />
     <Compile Include="ProjectEuler3Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

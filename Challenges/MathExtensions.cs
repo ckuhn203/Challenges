@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Challenges
 {
-    public static class Numbers
+    public static class MathExtensions
     {
         public static bool IsPrime(Int64 number)
         {
@@ -20,9 +20,9 @@ namespace Challenges
             
             double sqrtOfNumber = Math.Sqrt(number);
 
-            for (var index = 3; index <= sqrtOfNumber; index += 2) //skip even numbers 
+            for (var i = 3; i <= sqrtOfNumber; i += 2) //skip even numbers 
             {
-                if (IsFactor(number,index) )
+                if (IsFactor(number,i) )
                 {
                     return false;
                 }
@@ -79,6 +79,18 @@ namespace Challenges
                 }
             }
             return true;
+        }
+
+        public static int GreatestCommonDivisor(int a, int b)
+        {
+            if (a == 0) return b;
+            if (b == 0) return a;
+            return GreatestCommonDivisor(b, a % b);
+        }
+
+        public static int LeastCommonMultiple(int a, int b)
+        {
+            return Math.Abs(a * b) / GreatestCommonDivisor(a, b);
         }
     }
 }

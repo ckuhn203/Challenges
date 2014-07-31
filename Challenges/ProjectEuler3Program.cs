@@ -11,7 +11,7 @@ namespace Challenges
         static void Main(string[] args)
         {
             const Int64 verybigint = 600851475143;
-            Int64[] factors = Numbers.PrimeFactors(verybigint);
+            Int64[] factors = MathExtensions.PrimeFactors(verybigint);
 
             Console.WriteLine((factors.Max()));
 
