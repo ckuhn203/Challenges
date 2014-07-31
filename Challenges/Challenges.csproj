@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Challenges.ProjectEuler5Program</StartupObject>
+    <StartupObject>Challenges.ProjectEuler6Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Fibonacci.bak" />
+    <Compile Include="ProjectEuler6Program.cs" />
     <Compile Include="ProjectEuler5Program.cs" />
     <Compile Include="Fibonacci.cs" />
     <Compile Include="FibonacciProgram.cs" />
